@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Delegate.SharePoint.App.Template</id>
+    <version>1.0.0</version>
+    <title>Delegate's SharePoint app template structure</title>
+    <authors>Jannik Rasmussen</authors>
+    <owners>Jannik Rasmussen</owners>
+    <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+    <!--<projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Template structure for a SharePoint hosted SPA project, using AngularJs and TypeScript.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Delegate Delegateas SharePoint App SPA Single Page Application Angular Angularjs TypeScript Template Structure Sample</tags>
+    <dependencies>
+      <dependency id="AngularJS.Core" version="[1.4.3,2.0.0)" />
+      <dependency id="angularjs.TypeScript.DefinitelyTyped" version="[4.0.7,5.0.0)" />
+      <dependency id="jquery.TypeScript.DefinitelyTyped" version="[2.2.6, 2.5.0)" />
+      <dependency id="microsoft-ajax.TypeScript.DefinitelyTyped" version="[0.0.1,1.0.0)" />
+      <dependency id="sharepoint.TypeScript.DefinitelyTyped" version="[0.1.8,1.0.0)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tmp\**\*.html" target="content\" />
+    <!-- TypeScript files, are renamed to .pp -->
+    <file src="tmp\**\*.pp" target="content\" />
+    <file src="tmp\**\*.scss" exclude="**\*.css;**.*.map" target="content\" />
+  </files>
+</package>

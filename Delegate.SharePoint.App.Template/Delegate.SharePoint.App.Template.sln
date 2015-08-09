@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate.SharePoint.App.Template", ".", "{C27315A5-5F43-4F69-A1E9-301160601B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate.SharePoint.App.Template.Package", "Delegate.SharePoint.App.Template.Package\Delegate.SharePoint.App.Template.Package.csproj", "{77FB4246-6DA5-491F-B197-1A1D859144A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C27315A5-5F43-4F69-A1E9-301160601B63} = {C27315A5-5F43-4F69-A1E9-301160601B63}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F1A1BD64-5EBA-4965-8E04-BD0C96ABE1B6}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "nuget", "Tools\nuget.exe", "{840D6912-E62C-45DD-8F16-23F514C40E4D}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = D:\GitHub\DG.SP.App.Template\Delegate.SharePoint.App.Template\Tools\nuget.exe
+		RemoteMachine = JANNIK-WIN10-ST
+		StartingDirectory = D:\GitHub\DG.SP.App.Template\Delegate.SharePoint.App.Template\Tools
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Debug|x86.Build.0 = Debug|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Release|x86.ActiveCfg = Release|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Release|x86.Build.0 = Release|Any CPU
+		{C27315A5-5F43-4F69-A1E9-301160601B63}.Release|x86.Deploy.0 = Release|Any CPU
+		{77FB4246-6DA5-491F-B197-1A1D859144A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FB4246-6DA5-491F-B197-1A1D859144A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FB4246-6DA5-491F-B197-1A1D859144A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{77FB4246-6DA5-491F-B197-1A1D859144A7}.Debug|x86.Build.0 = Debug|Any CPU
+		{77FB4246-6DA5-491F-B197-1A1D859144A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FB4246-6DA5-491F-B197-1A1D859144A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FB4246-6DA5-491F-B197-1A1D859144A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{77FB4246-6DA5-491F-B197-1A1D859144A7}.Release|x86.Build.0 = Release|Any CPU
+		{840D6912-E62C-45DD-8F16-23F514C40E4D}.Debug|Any CPU.ActiveCfg = Release|x86
+		{840D6912-E62C-45DD-8F16-23F514C40E4D}.Debug|x86.ActiveCfg = Release|x86
+		{840D6912-E62C-45DD-8F16-23F514C40E4D}.Release|Any CPU.ActiveCfg = Release|x86
+		{840D6912-E62C-45DD-8F16-23F514C40E4D}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{840D6912-E62C-45DD-8F16-23F514C40E4D} = {F1A1BD64-5EBA-4965-8E04-BD0C96ABE1B6}
+	EndGlobalSection
+EndGlobal
