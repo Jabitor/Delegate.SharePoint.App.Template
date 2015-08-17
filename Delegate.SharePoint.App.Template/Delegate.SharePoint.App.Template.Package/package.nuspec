@@ -19,6 +19,7 @@
       <dependency id="jquery.TypeScript.DefinitelyTyped" version="[2.2.6, 2.5.0)" />
       <dependency id="microsoft-ajax.TypeScript.DefinitelyTyped" version="[0.0.1,1.0.0)" />
       <dependency id="sharepoint.TypeScript.DefinitelyTyped" version="[0.1.8,1.0.0)" />
+      <dependency id="Delegate_AjaxMinBuilder" version="[1.0.2,2.0.0)" /> 
     </dependencies>
   </metadata>
   <files>

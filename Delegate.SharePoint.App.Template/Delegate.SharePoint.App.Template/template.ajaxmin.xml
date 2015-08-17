@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
-  <!--
-  
-  This is a sample ajaxmin.xml config file. 
+  <output path="app.min.js">
+    <symbolMap name="v3" path="app.min.js.map" />
+    <input path="Scripts\app\module.ts"/>
+  </output>
 
-  You can have as many .ajaxmin.xml files as required and you can nest them in folders. 
-  I'll recommend to place them where you want the output file(s).
-
-  One file can emit multiple outputs.
-
-  Symbolmaps generation is of course optional.
-  -->
-
-  <!--
-  <output path="MySiteScript.min.js">
+  <!--<output path="MySiteScript.min.js">
     <symbolMap name="v3" path="MySiteScript.min.js.map" />
     <input path="MySiteScript.js"/>
   </output>
@@ -28,6 +20,5 @@
   <output path="MySiteCss.min.css">
     <input path="MySite.css" />    
     <input path="MySiteNav.css" />    
-  </output>
-  -->
+  </output>-->
 </root>

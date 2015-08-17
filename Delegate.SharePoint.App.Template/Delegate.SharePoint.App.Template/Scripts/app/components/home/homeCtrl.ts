@@ -4,7 +4,8 @@
         // Therefore we can use the static $inject variable, to push in the correct parameters.
         // This is also due to the fact, that minifying programs will minify/shorten parameter names.
         public static $inject = [
-            '$scope'
+            '$scope',
+            'AppService'
         ];
 
         // By making the constructor variables private or public, 
@@ -12,7 +13,7 @@
         // It's the same as doing: 
         // private scope: IHomeCtrlScope;
         // constructor($scope: IHomeCtrlScope) { this.scope = $scope; }
-        constructor(private $scope: IHomeCtrlScope) {
+        constructor(private $scope: IHomeCtrlScope, AppService: AppService) {
             this.setupScope();           
         }
 

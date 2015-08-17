@@ -23,5 +23,6 @@
     <File Path="Scripts\typings\sharepoint\SharePoint.d.ts" Url="Scripts/typings/sharepoint/SharePoint.d.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\typings\microsoft-ajax\microsoft.ajax.d.ts" Url="Scripts/typings/microsoft-ajax/microsoft.ajax.d.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\app\components\home\IHomeCtrlScope.ts" Url="Scripts/app/components/home/IHomeCtrlScope.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\shared\appService\AppService.ts" Url="Scripts/app/shared/appService/AppService.ts" ReplaceContent="TRUE" />
   </Module>
 </Elements>

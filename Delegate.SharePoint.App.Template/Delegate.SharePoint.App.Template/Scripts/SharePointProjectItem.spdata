@@ -24,5 +24,6 @@
     <ProjectItemFile Source="typings\sharepoint\SharePoint.d.ts" Target="Scripts\typings\sharepoint\" Type="ElementFile" />
     <ProjectItemFile Source="typings\microsoft-ajax\microsoft.ajax.d.ts" Target="Scripts\typings\microsoft-ajax\" Type="ElementFile" />
     <ProjectItemFile Source="app\components\home\IHomeCtrlScope.ts" Target="Scripts\app\components\home\" Type="ElementFile" />
+    <ProjectItemFile Source="app\shared\appService\AppService.ts" Target="Scripts\app\shared\appService\" Type="ElementFile" />
   </Files>
 </ProjectItem>

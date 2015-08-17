@@ -64,7 +64,9 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Content\app.scss" />
+    <Content Include="TemplateApp\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a5363124-656f-4ce8-8fa1-58c5d8b23507}</SharePointProjectItemId>
@@ -75,14 +77,18 @@
     <None Include="SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6a20c4b8-ad88-4bd1-ab68-cf57071e375f}</SharePointProjectItemId>
     </None>
+    <None Include="Content\app.scss" />
+    <None Include="TemplateApp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5cd6fd7e-146d-4869-995a-17a69b9e63fe}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{46457640-e5e4-42a0-b750-2404c3298c7b}</SharePointProjectItemId>
     </None>
-    <Content Include="Pages\index.html" />
-    <Content Include="sample.ajaxmin.xml" />
+    <Content Include="Pages\App.Template.aspx" />
+    <Content Include="template.ajaxmin.xml" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
@@ -131,6 +137,7 @@
     <TypeScriptCompile Include="Scripts\app\components\home\HomeCtrl.ts" />
     <TypeScriptCompile Include="Scripts\app\components\home\IHomeCtrlScope.ts" />
     <TypeScriptCompile Include="Scripts\app\module.ts" />
+    <TypeScriptCompile Include="Scripts\app\shared\appService\AppService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
@@ -142,9 +149,7 @@
     <TypeScriptCompile Include="Scripts\typings\microsoft-ajax\microsoft.ajax.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scripts\app\shared\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
