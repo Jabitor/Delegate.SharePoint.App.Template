@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C27315A5-5F43-4F69-A1E9-301160601B63}</ProjectGuid>
+    <ProjectGuid>{2A53826B-C4B2-4838-882D-7DF2E2F68218}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Delegate.SharePoint.App.Template</RootNamespace>
@@ -17,32 +17,11 @@
     <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
     <ProjectMode>SharePointApp</ProjectMode>
-    <AppFeaturePartId>{a27fecdc-1253-4cf0-bf73-aeeffb3da463}</AppFeaturePartId>
-    <WspPartId>{8ddb5eca-91ed-425b-a9a3-305019b23f97}</WspPartId>
-    <WorkflowPartId>{d916cdc8-1c0e-4299-85d7-baea7baab477}</WorkflowPartId>
-    <CspkgPartId>{779b0410-dac7-429d-b33d-4c9930ca8c0d}</CspkgPartId>
-    <SqlPackagePartId>{46457640-e5e4-42a0-b750-2404c3298c7b}</SqlPackagePartId>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>D:\GitHub\DG.SP.App.Template\Delegate.SharePoint.App.Template\Backup2\</UpgradeBackupLocation>
-    <OldToolsVersion>14.0</OldToolsVersion>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <AppFeaturePartId>{d6e916d3-6d36-4c7f-b0a2-1d21f508905d}</AppFeaturePartId>
+    <WspPartId>{9e419621-2935-4f53-b898-46cd6c553585}</WspPartId>
+    <WorkflowPartId>{c97fa565-abca-40ec-9b72-a4b6328e8c2c}</WorkflowPartId>
+    <CspkgPartId>{0e12d39f-8de6-48bd-bcdf-0fb5db822d59}</CspkgPartId>
+    <SqlPackagePartId>{1f9e1b23-5f64-4c1f-85b7-23881ca76e85}</SqlPackagePartId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,69 +43,9 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="TemplateApp\Elements.xml">
-      <OpcRelationship>feature-elementmanifest</OpcRelationship>
-    </Content>
-    <None Include="packages.config" />
-    <None Include="Pages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a5363124-656f-4ce8-8fa1-58c5d8b23507}</SharePointProjectItemId>
-    </None>
-    <Content Include="Elements.xml" />
-    <Content Include="Pages\Elements.xml" />
-    <None Include="Scripts\jquery-2.1.4.min.map" />
-    <None Include="SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6a20c4b8-ad88-4bd1-ab68-cf57071e375f}</SharePointProjectItemId>
-    </None>
-    <None Include="Content\app.scss" />
-    <None Include="TemplateApp\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5cd6fd7e-146d-4869-995a-17a69b9e63fe}</SharePointProjectItemId>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Scripts\angular.min.js.map" />
-    <None Include="Scripts\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{46457640-e5e4-42a0-b750-2404c3298c7b}</SharePointProjectItemId>
-    </None>
-    <Content Include="Pages\App.Template.aspx" />
-    <Content Include="template.ajaxmin.xml" />
-    <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\Elements.xml" />
-    <Content Include="Scripts\App.js" />
-    <Content Include="Scripts\jquery-2.1.4.intellisense.js" />
-    <Content Include="Scripts\jquery-2.1.4.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Scripts\_references.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Content\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b560e82d-1ccd-459f-b876-0d7fae0cb387}</SharePointProjectItemId>
-    </None>
-    <Content Include="Content\Elements.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Images\AppIcon.png">
+    <Content Include="AppIcon.png">
       <OpcRelationship>manifest-icon</OpcRelationship>
     </Content>
-    <Content Include="Images\Elements.xml" />
-    <None Include="Images\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{588f5ee4-7e5b-47a1-966f-733b778cf6f1}</SharePointProjectItemId>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Package\Package.package">
-      <PackageId>{3980fc10-a19b-4091-8dcb-0dd34f97b01f}</PackageId>
-    </None>
-    <None Include="Package\Package.Template.xml">
-      <DependentUpon>Package.package</DependentUpon>
-    </None>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{8206b8f3-af25-463c-b9de-a0b3b38ceda2}</FeatureId>
-    </None>
-    <None Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <AppManifestFile Include="AppManifest.xml">
@@ -134,33 +53,18 @@
     </AppManifestFile>
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\app\components\home\HomeCtrl.ts" />
-    <TypeScriptCompile Include="Scripts\app\components\home\IHomeCtrlScope.ts" />
-    <TypeScriptCompile Include="Scripts\app\module.ts" />
-    <TypeScriptCompile Include="Scripts\app\shared\appService\AppService.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\microsoft-ajax\microsoft.ajax.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />
+    <ProjectReference Include="..\Delegate.SharePoint.App.TemplateWeb\Delegate.SharePoint.App.TemplateWeb.csproj">
+      <Project>{53004C0E-46FE-4394-B792-1D7F33483075}</Project>
+      <Name>Delegate.SharePoint.App.TemplateWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>Delegate.SharePoint.App.TemplateWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -168,12 +72,4 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="..\packages\Delegate_AjaxMinBuilder.1.0.2\build\Delegate_AjaxMinBuilder.targets" Condition="Exists('..\packages\Delegate_AjaxMinBuilder.1.0.2\build\Delegate_AjaxMinBuilder.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Delegate_AjaxMinBuilder.1.0.2\build\Delegate_AjaxMinBuilder.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Delegate_AjaxMinBuilder.1.0.2\build\Delegate_AjaxMinBuilder.targets'))" />
-  </Target>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" />
 </Project>

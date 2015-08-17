@@ -56,9 +56,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(SolutionDir)$(SolutionName)\*.ts" "$(TargetDir)\tmp\" /D /y /s /r
-xcopy "$(SolutionDir)$(SolutionName)\*.scss" "$(TargetDir)\tmp\" /D /y /s /r
-xcopy "$(SolutionDir)$(SolutionName)\*.html" "$(TargetDir)\tmp\" /D /y /s /r
+    <PostBuildEvent>xcopy "$(SolutionDir)$(SolutionName)Web\*.ts" "$(TargetDir)\tmp\" /D /y /s /r
+xcopy "$(SolutionDir)$(SolutionName)Web\*.scss" "$(TargetDir)\tmp\" /D /y /s /r
+xcopy "$(SolutionDir)$(SolutionName)Web\*.html" "$(TargetDir)\tmp\" /D /y /s /r
 PowerShell -file "$(SolutionDir)$(ProjectName)\RenameFiles.ps1"
 "$(SolutionDir)\Tools\nuget.exe" pack "$(TargetDir)\package.nuspec"</PostBuildEvent>
   </PropertyGroup>

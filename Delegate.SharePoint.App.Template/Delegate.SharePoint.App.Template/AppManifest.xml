@@ -2,18 +2,16 @@
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="DelegateSharePointAppTemplate"
-     ProductID="{a5363124-656f-4ce8-8fa1-58c5d8b23507}"
+     ProductID="{a76e9b45-a990-410b-926b-aaa712b28c0b}"
      Version="1.0.0.0"
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
-    <Title>Delegate.SharePoint.App.Template</Title>
-    <StartPage>~appWebUrl/Pages/App.Template.aspx?{StandardTokens}</StartPage>
+    <StartPage>~remoteAppUrl/?{StandardTokens}</StartPage>
+    <Title>App Template by Delegate</Title>
   </Properties>
 
   <AppPrincipal>
-    <Internal />
+    <RemoteWebApplication ClientId="*" />
   </AppPrincipal>
-
-
 </App>
