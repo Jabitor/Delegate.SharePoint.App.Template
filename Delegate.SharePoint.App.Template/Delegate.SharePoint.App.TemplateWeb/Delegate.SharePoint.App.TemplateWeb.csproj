@@ -191,6 +191,7 @@
     <Compile Include="TokenHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\modules\home\home.tpl.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -198,6 +199,8 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-translate.js" />
     <Content Include="Scripts\angular-translate.min.js" />
+    <Content Include="Scripts\angular-ui-router.js" />
+    <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -231,10 +234,14 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="App\common\providers\AppService.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="App\common\providers\IAppServiceProvider.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="App\common\resources\ITranslationResource.ts" />
-    <TypeScriptCompile Include="App\common\providers\AppService.ts" />
     <TypeScriptCompile Include="App\common\providers\IAppService.ts" />
-    <TypeScriptCompile Include="App\common\providers\IAppServiceProvider.ts" />
     <TypeScriptCompile Include="App\Config.ts" />
     <TypeScriptCompile Include="App\common\resources\da-DK.ts" />
     <TypeScriptCompile Include="App\common\resources\en-US.ts" />
@@ -242,6 +249,7 @@
     <TypeScriptCompile Include="App\modules\home\HomeCtrl.ts" />
     <TypeScriptCompile Include="App\modules\home\IHomeCtrlScope.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular-translate\angular-translate.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angular-ui-router\angular-ui-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />

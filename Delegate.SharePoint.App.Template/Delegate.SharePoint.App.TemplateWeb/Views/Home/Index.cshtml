@@ -2,6 +2,7 @@
     ViewBag.Title = "Template App";
 }
 
-<div data-ng-app="TemplateApp">
+<div data-ng-app="TemplateApp" data-ng-controller="HomeCtrl">
     <h1>{{ 'HELLO' | translate }}</h1>
+    <div ui-view></div>
 </div>

@@ -1,23 +1,36 @@
 ﻿module $rootnamespace$ {
     export class Config {
         static $inject = [
-            //'$routeProvider',
+            '$stateProvider',
+            '$urlRouterProvider',
             '$translateProvider',
             'AppServiceProvider'
         ];
 
         constructor(
-            //private $routeProvider: ng.route.IRouteProvider,
+            private $stateProvider: ng.ui.IStateProvider,
+            private $urlRouterProvider: ng.ui.IUrlRouterProvider,
             private $translateProvider: ng.translate.ITranslateProvider,
             private AppServiceProvider: IAppServiceProvider
             ) {
-            this.setRoutes();
+            this.setStates();
             this.setTranslations();
         }
 
-        // Routing in the app (:
-        private setRoutes = () => {
+        // Routing in the app
+        private setStates = () => {
+            this.$stateProvider
+                .state('home', {
+                    url: '/',
+                    controller: $rootnamespace$.Home.HomeCtrl,
+                    templateUrl: '/app/modules/home/home.tpl.html'
+                })
+                .state('other', {
+                    url: '/other',
+                    template: "<p>Hejsa</p>"
+                });
 
+            this.$urlRouterProvider.otherwise('/');
         }
 
         // Supported languages
@@ -31,7 +44,7 @@
             // When using the async method, I'd recommend enabling localStorage (this.$translateProvider.useLocalStorage();)
             this.$translateProvider.translations(this.supportedLanguages.english, Resources.English);
             this.$translateProvider.translations(this.supportedLanguages.danish, Resources.Danish);
-            
+
             this.$translateProvider.preferredLanguage(this.getPreferredLanguage());
         }
 

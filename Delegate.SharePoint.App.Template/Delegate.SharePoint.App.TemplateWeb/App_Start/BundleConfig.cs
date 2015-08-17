@@ -9,10 +9,11 @@ namespace Delegate.SharePoint.App.TemplateWeb
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                "~/Scripts/jquery-2.1.4.min.js",
+                "~/Scripts/jquery-2.1.4.js",
                 "~/Scripts/spcontext.js",
-                "~/Scripts/angular.min.js",
-                "~/Scripts/angular-translate.min.js",
+                "~/Scripts/angular.js",
+                "~/Scripts/angular-translate.js",
+                "~/Scripts/angular-ui-router.js",
                 "~/App/common/providers/AppService.js",
                 "~/App/common/resources/da-DK.js",
                 "~/App/common/resources/en-US.js",

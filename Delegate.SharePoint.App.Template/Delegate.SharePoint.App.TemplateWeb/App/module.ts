@@ -3,7 +3,7 @@
 
     // Register the Angular Module
     // 'pascalprecht.translate' is angular-translate
-    var app = angular.module('TemplateApp', ['pascalprecht.translate']);
+    var app = angular.module('TemplateApp', ['pascalprecht.translate', 'ui.router']);
 
     // Below here, controls, services, etc. will be registered.
     // Note that the full namespace/module name is not required, but I usually do it for readability
